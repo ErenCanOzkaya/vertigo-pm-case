@@ -995,10 +995,11 @@
       .two-col, .principle-grid, .kpi-grid, .risk-grid { grid-template-columns: 1fr; }
     }
     @media (max-width: 640px) {
-      .sticky-nav { padding: 0 16px; }
-      .nav-brand { font-size: 11px; }
-      .nav-links { gap: 11px; }
-      .nav-links a { font-size: 10px; }
+      .sticky-nav { padding: 0 14px; }
+      .nav-brand { font-size: 10.5px; flex-shrink: 0; }
+      .nav-links { gap: 14px; margin-left: 14px; flex: 1 1 auto; min-width: 0; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; -ms-overflow-style: none; }
+      .nav-links::-webkit-scrollbar { display: none; }
+      .nav-links a { font-size: 10px; white-space: nowrap; flex-shrink: 0; }
       .container { padding: 0 18px; }
       section { padding: 68px 0; }
       .v2-paths { flex-direction: column; }
@@ -1023,6 +1024,7 @@
     <li><a href="index.html#q4">Q4</a></li>
     <li><a href="index.html#q5">Q5</a></li>
     <li><a href="piggy-bank-2.html" class="active">Piggy Bank 2.0 <span class="nav-dot"></span></a></li>
+    <li><a href="ab-testing-2.html" style="color:var(--accent)">A/B Testing 2.0 <span class="nav-dot"></span></a></li>
   </ul>
 </nav>
 

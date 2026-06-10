@@ -1318,10 +1318,11 @@
       .ab-grid .ab-card:nth-child(5) { grid-column: auto; max-width: 100%; }
     }
     @media (max-width: 640px) {
-      .sticky-nav { padding: 0 16px; }
-      .nav-brand { font-size: 11px; }
-      .nav-links { gap: 12px; }
-      .nav-links a { font-size: 10px; }
+      .sticky-nav { padding: 0 14px; }
+      .nav-brand { font-size: 10.5px; flex-shrink: 0; }
+      .nav-links { gap: 14px; margin-left: 14px; flex: 1 1 auto; min-width: 0; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; -ms-overflow-style: none; }
+      .nav-links::-webkit-scrollbar { display: none; }
+      .nav-links a { font-size: 10px; white-space: nowrap; flex-shrink: 0; }
       .container { padding: 0 18px; }
       section { padding: 68px 0; }
       .game-cards { grid-template-columns: 1fr; }
@@ -1667,6 +1668,7 @@
     <li><a href="#q4">Q4</a></li>
     <li><a href="#q5">Q5</a></li>
     <li><a href="piggy-bank-2.html" style="color:var(--accent)">Piggy Bank 2.0 <span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 6px var(--accent);vertical-align:middle;margin-left:3px"></span></a></li>
+    <li><a href="ab-testing-2.html" style="color:var(--accent)">A/B Testing 2.0 <span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 6px var(--accent);vertical-align:middle;margin-left:3px"></span></a></li>
   </ul>
 </nav>
 
@@ -2030,6 +2032,16 @@
     <span class="eyebrow reveal">Case Study — Question Three</span>
     <h2 class="section-title reveal"><span class="acc">Q3</span> — A/B Testing Suggestions</h2>
     <div class="section-divider reveal"></div>
+
+    <!-- Post-submission deep-dive callout -->
+    <a href="ab-testing-2.html" class="reveal" style="display:flex;align-items:center;gap:16px;background:var(--card);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;padding:16px 22px;margin-bottom:44px;text-decoration:none;transition:border-color 0.3s,transform 0.3s" onmouseover="this.style.borderColor='rgba(233,69,96,0.45)';this.style.transform='translateX(3px)'" onmouseout="this.style.borderColor='var(--border)';this.style.borderLeftColor='var(--accent)';this.style.transform='translateX(0)'">
+      <span style="font-size:26px;line-height:1;flex-shrink:0">🧪</span>
+      <span style="flex:1">
+        <span style="display:block;font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:4px">Update — Post-Submission Deep Dive</span>
+        <span style="display:block;font-size:14.5px;color:var(--text);font-weight:500;line-height:1.5">This answer has been deepened after submission <span style="color:var(--accent);font-weight:600">→ see A/B Testing 2.0</span></span>
+      </span>
+      <span style="font-size:20px;color:var(--accent);flex-shrink:0">→</span>
+    </a>
 
     <div class="ab-grid">
       <div class="ab-card reveal">
